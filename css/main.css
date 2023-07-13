@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+p {
+    font-family: 'Rubik', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(204, 204, 194);    
+    margin: 3px auto 10px auto;
+    color: rgb(46, 37, 88);
+}
+.top-page {
+   display: flex;
+   margin-bottom: 10px;
+   justify-content: space-between;
+}
+.paginas {   
+    text-align: center;
+    color: rgb(46, 37, 88);    
+}
+ul {
+    list-style-type: none;
+    margin-top: 7px;    
+    font-family: 'Rubik', sans-serif; 
+    justify-content: center;     
+}
+  
+li {
+    display: inline;
+}
+.redes-sociales {
+    
+    display: flex;
+    justify-content: right;
+    margin-top: 5px;
+    margin-right: 5px;    
+}
+
+.imagen-fondo{       
+    bottom: 70px; 
+    width: 100%;   
+}
+
+h1 {
+    font-family: 'Rubik', sans-serif;
+    color: rgb(49, 39, 95);
+    text-align: center;
+}
+h2 {
+    font-family: 'Rubik', sans-serif;
+    color: rgb(49, 39, 95);
+    text-align: center;
+    margin: 40px 0px 40px 0px;
+}
+h3 {
+    font-family: 'Rubik', sans-serif;
+    color: rgb(49, 39, 95);
+    text-align: center;
+}
+
+.borde{   
+    padding: 55px 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    justify-content: center;
+    width: 300px;       
+}
+
+.formularios {
+    font-family: 'Rubik', sans-serif;
+    color: rgb(49, 39, 95);
+    text-align: center;    
+}
+.footer-links-pt :hover{
+    text-decoration: underline;
+}
+.news-1 {
+    text-align: justify;    
+}
+.imagen-news{
+    padding-bottom: 50px;
+    text-align: center;
+}
+.index-news {
+    text-align: center;
+    color: rgb(49, 39, 95);
+}
+.imagen-photos{
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 50px;
+  column-gap: 10px;
+  row-gap: 15px;
+  justify-items: center;
+}
+
+.container-news-index{
+   padding: 3px;
+   margin: 2%;
+   display: flex;
+   flex-flow: row nowrap;
+   justify-content: space-between;
+   text-align: center;
+}
+
+.imagenes-photos-index {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.boton-ver {
+    margin-top: 15px;
+    font-family: 'Rubik', sans-serif;
+    text-align:center;
+}
+
+.biography-index{
+    width: 100%;
+    margin:50px 0px 50px 0px;
+}
+.footer {
+margin-top: 6px;
+justify-content: center;
+text-align: center;
+color: rgb(49, 39, 95);
+}
+.footer-row {
+flex-wrap: wrap;    
+}
+.p-footer {
+    font-size: x-small;
+    color: rgb(49, 39, 95);
+}
+.footer-links {
+    justify-content: center;
+}
+.redes-sociales-footer {
+    margin-right: 3px;
+    margin-top: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .top-page{
+        justify-content: center;
+    }
+    .redes-sociales{
+        display: none;
+    }
+    .imagen-fondo{
+        width: 100%;
+    }
+    .container-news-index{
+        flex-direction: column;        
+    }
+    .imagenes-photos-index{
+        
+        flex-direction: column;
+        justify-content: center;
+    }
+    .biography-imagen{
+        width: 100%;
+    }
+    .imagen-photos{
+        display: grid;
+        grid-template-columns: auto;
+        padding: 50px;
+        column-gap: 10px;
+        row-gap: 15px;
+        justify-items: center;
+    }
+    .imagen-biography{
+        width: 100%;
+    }
+    
+}
+
+
+
+
+
+
+
