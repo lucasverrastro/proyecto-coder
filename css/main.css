@@ -100,8 +100,9 @@ h3 {
     text-align:center;
 }
 
-.biography-imagen{
+.imagen-biography{
     width: 100%;
+    height: 324px;
     margin:50px 0px 50px 0px;
 }
 
@@ -168,9 +169,7 @@ h3 {
         flex-direction: column;
         justify-content: center;
     }
-    .biography-imagen{
-        width: 100%;
-    }
+    
     .imagen-photos{
         display: grid;
         grid-template-columns: 1fr;
