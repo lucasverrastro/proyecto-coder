@@ -1,22 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import "colors";
+@import "font-family";
+
+
 p {
-    font-family: 'Rubik', sans-serif;
+    font-family: $font-family-p;
+    color: $color-p;
 }
 a {
     text-decoration: none;
-    color: rgb(46, 37, 88);
+    color: $color-a;
 }
-
+a:active {
+    color: $color-a-active;
+  }
 body {
-    background-color: rgb(204, 204, 194);    
+    background-color: $color-body;    
     margin: 3px auto 10px auto;
-    color: rgb(46, 37, 88);
+    color: $color-body;
 }
 .top-page {
-   display: flex;
-   justify-content: space-between;
-   margin: 7px 5px 5px 10px;
-   color: rgb(46, 37, 88);
+    display: flex;
+    justify-content: space-between;
+    margin: 7px 5px 5px 10px;
+    color: $color-top-page;
 }
 .logo{
     height: 20px;
@@ -24,14 +31,14 @@ body {
 
 ul {
     list-style-type: none;       
-    font-family: 'Rubik', sans-serif; 
+    font-family: $font-family-ul; 
     justify-content: center;
-    color: rgb(46, 37, 88);     
+    color: $color-ul;     
 }
   
 li {
     display: inline;
-    color: rgb(46, 37, 88);
+    color: $color-li;
 }
 
 .imagen-fondo{       
@@ -40,19 +47,24 @@ li {
 }
 
 h1 {
-    font-family: 'Rubik', sans-serif;
-    color: rgb(49, 39, 95);
+    font-family: $font-family-h1;
+    color: $color-h1;
     text-align: center;
 }
 h2 {
-    font-family: 'Rubik', sans-serif;
-    color: rgb(49, 39, 95);
+    font-family: $font-family-h2;
+    color: $color-h2;
     text-align: center;
     margin: 40px 0px 40px 0px;
 }
 h3 {
-    font-family: 'Rubik', sans-serif;
-    color: rgb(49, 39, 95);
+    font-family: $font-family-h3;
+    color: $color-h3;
+    text-align: center;
+}
+h4 {
+    font-family: $font-family-h4;
+    color: $color-h4;
     text-align: center;
 }
 
@@ -64,7 +76,7 @@ h3 {
 }
 .index-news {
     text-align: center;
-    color: rgb(49, 39, 95);
+    color: $color-index-news;
 }
 
 .container-news-index{
@@ -75,6 +87,7 @@ h3 {
     column-gap: 50px;
     row-gap: 20px;
     justify-items: center;
+    
 }
 
 .imagenes-photos-index {
@@ -97,7 +110,7 @@ h3 {
   }
 .boton-ver {
     margin-top: 15px;
-    font-family: 'Rubik', sans-serif;
+    font-family: $font-family-boton-ver;
     text-align:center;
 }
 
@@ -114,32 +127,32 @@ h3 {
 }
 .borde{   
     padding: 55px 40px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 20px $color-borde-formulario;
     border-radius: 20px;
     justify-content: center;
     width: 300px;       
 }
 
 .formularios {
-    font-family: 'Rubik', sans-serif;
-    color: rgb(49, 39, 95);
+    font-family: $font-family-formulario;
+    color: $color-letras-fomulario;
     text-align: center;    
 }
 .footer {
-  margin-top: 6px;
-  justify-content: center;
-  text-align: center;
-  color: rgb(49, 39, 95);
+    margin-top: 6px;
+    justify-content: center;
+    text-align: center;
+    color: $color-letras-footer;
 }
 .footer-links-pt :hover{
     text-decoration: underline;
 }
 .footer-row {
-  flex-wrap: wrap;    
+    flex-wrap: wrap;    
 }
 .p-footer {
     font-size: x-small;
-    color: rgb(49, 39, 95);
+    color: $color-ultimasletras-footer;
 }
 .footer-links {
     justify-content: center;
@@ -190,10 +203,3 @@ h3 {
     }
     
 }
-
-
-
-
-
-
-

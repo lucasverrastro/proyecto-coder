@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+p {
+  font-family: "Rubik", sans-serif;
+  color: rgb(46, 37, 88);
+}
+
+a {
+  text-decoration: none;
+  color: rgb(46, 37, 88);
+}
+
+a:active {
+  color: rgb(0, 0, 0);
+}
+
+body {
+  background-color: rgb(204, 204, 194);
+  margin: 3px auto 10px auto;
+  color: rgb(204, 204, 194);
+}
+
+.top-page {
+  display: flex;
+  justify-content: space-between;
+  margin: 7px 5px 5px 10px;
+  color: rgb(46, 37, 88);
+}
+
+.logo {
+  height: 20px;
+}
+
+ul {
+  list-style-type: none;
+  font-family: "Rubik", sans-serif;
+  justify-content: center;
+  color: rgb(46, 37, 88);
+}
+
+li {
+  display: inline;
+  color: rgb(46, 37, 88);
+}
+
+.imagen-fondo {
+  bottom: 70px;
+  width: 100%;
+}
+
+h1 {
+  font-family: "Rubik", sans-serif;
+  color: rgb(46, 37, 88);
+  text-align: center;
+}
+
+h2 {
+  font-family: "Rubik", sans-serif;
+  color: rgb(46, 37, 88);
+  text-align: center;
+  margin: 40px 0px 40px 0px;
+}
+
+h3 {
+  font-family: "Rubik", sans-serif;
+  color: rgb(46, 37, 88);
+  text-align: center;
+}
+
+h4 {
+  font-family: "Rubik", sans-serif;
+  color: rgb(46, 37, 88);
+  text-align: center;
+}
+
+.news {
+  grid-template-columns: 1fr;
+  row-gap: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.index-news {
+  text-align: center;
+  color: rgb(49, 39, 95);
+}
+
+.container-news-index {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 50px;
+  column-gap: 50px;
+  row-gap: 20px;
+  justify-items: center;
+}
+
+.imagenes-photos-index {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 50px;
+  column-gap: 50px;
+  row-gap: 20px;
+  justify-items: center;
+}
+
+.imagen-photos {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 50px;
+  column-gap: 10px;
+  row-gap: 15px;
+  justify-items: center;
+}
+
+.boton-ver {
+  margin-top: 15px;
+  font-family: "Rubik", sans-serif;
+  text-align: center;
+}
+
+.imagen-biography {
+  width: 100%;
+  height: 324px;
+  margin: 50px 0px 50px 0px;
+}
+
+.tarjeta-completa {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+.borde {
+  padding: 55px 40px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  justify-content: center;
+  width: 300px;
+}
+
+.formularios {
+  font-family: "Rubik", sans-serif;
+  color: rgb(49, 39, 95);
+  text-align: center;
+}
+
+.footer {
+  margin-top: 6px;
+  justify-content: center;
+  text-align: center;
+  color: rgb(49, 39, 95);
+}
+
+.footer-links-pt :hover {
+  text-decoration: underline;
+}
+
+.footer-row {
+  flex-wrap: wrap;
+}
+
+.p-footer {
+  font-size: x-small;
+  color: rgb(49, 39, 95);
+}
+
+.footer-links {
+  justify-content: center;
+}
+
+.redes-sociales-footer {
+  margin-right: 3px;
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .top-page {
+    justify-content: center;
+  }
+  .redes-sociales {
+    display: none;
+  }
+  .logo {
+    display: none;
+  }
+  .imagen-fondo {
+    width: 100%;
+  }
+  .container-news-index {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .imagenes-photos-index {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 50px;
+    column-gap: 10px;
+    row-gap: 15px;
+    justify-items: center;
+  }
+  .imagen-photos {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 50px;
+    column-gap: 10px;
+    row-gap: 15px;
+    justify-items: center;
+  }
+  .imagen-biography {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
