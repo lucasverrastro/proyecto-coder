@@ -12,9 +12,6 @@ a {
     text-decoration: none;
     color: $color-a;
 }
-a:active {
-    color: $color-a-active;
-  }
 body {
     background-color: $color-body;    
     margin: 3px auto 10px auto;
@@ -25,28 +22,30 @@ body {
     justify-content: space-between;
     margin: 7px 5px 5px 10px;
     color: $color-top-page;
-}
-.logo{
+
+    a:active {
+        color: $color-a-active;
+    }
+
+    ul {
+        list-style-type: none;       
+        font-family: $font-family-ul; 
+        justify-content: center;
+        color: $color-ul;     
+    }
+      
+    li {
+        display: inline;
+        color: $color-li;
+    }
+    .logo{
     height: 20px;
+    }
 }
-
-ul {
-    list-style-type: none;       
-    font-family: $font-family-ul; 
-    justify-content: center;
-    color: $color-ul;     
-}
-  
-li {
-    display: inline;
-    color: $color-li;
-}
-
 .imagen-fondo{       
     bottom: 70px; 
     width: 100%;   
 }
-
 h1 {
     font-family: $font-family-h1;
     color: $color-h1;
@@ -68,38 +67,41 @@ h4 {
     color: $color-h4;
     text-align: center;
 }
-
+.container-news-index{   
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 50px;
+    column-gap: 50px;
+    row-gap: 20px; 
+    
+    .news-index {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    .imagen-news-index{
+    width: 200px;
+    height: 200px;
+    }
+}
+.imagenes-photos-index {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 50px;
+    column-gap: 50px;
+    row-gap: 20px;
+    justify-items: center;   
+}
+.boton-ver {
+    margin-top: 10px;
+    font-family: $font-family-boton-ver;
+    text-align:center;   
+}
 .news{
     grid-template-columns: 1fr;
     row-gap: 20px;
     padding: 20px;
     text-align: center;
-}
-.index-news {
-    text-align: center;
-    color: $color-index-news;
-}
-
-.container-news-index{
-   
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding: 50px;
-    column-gap: 50px;
-    row-gap: 20px;
-    justify-items: center;
-    
-}
-
-.imagenes-photos-index {
-    
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding: 50px;
-    column-gap: 50px;
-    row-gap: 20px;
-    justify-items: center;
-    
 }
 .imagen-photos{
     display: grid;
@@ -108,99 +110,91 @@ h4 {
     column-gap: 10px;
     row-gap: 15px;
     justify-items: center;
-  }
-.boton-ver {
-    margin-top: 15px;
-    font-family: $font-family-boton-ver;
-    text-align:center;
 }
-
 .imagen-biography{
     width: 100%;
     height: 324px;
     margin:50px 0px 50px 0px;
 }
-
 .tarjeta-completa{
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
-}
-.borde{   
+
+    .borde {   
     padding: 55px 40px;
     box-shadow: 0 0 20px $color-borde-formulario;
     border-radius: 20px;
     justify-content: center;
     width: 300px;       
-}
-
-.formularios {
+    }
+    .formularios {
     font-family: $font-family-formulario;
     color: $color-letras-fomulario;
     text-align: center;    
+    }    
 }
 .footer {
-    margin-top: 6px;
+    margin-top: 100px;
     justify-content: center;
     text-align: center;
     color: $color-letras-footer;
-}
-.footer-links-pt :hover{
+
+    .footer-links-pt :hover{
     text-decoration: underline;
-}
-.footer-row {
+    }
+    .footer-row {
     flex-wrap: wrap;    
-}
-.p-footer {
+    }
+    .p-footer {
     font-size: x-small;
     color: $color-ultimasletras-footer;
-}
-.footer-links {
+    }
+    .footer-links {
     justify-content: center;
-}
-.redes-sociales-footer {
+    }
+    .redes-sociales-footer {
     margin-right: 3px;
     margin-top: 5px;
+    }
 }
 
+
 @media screen and (max-width: 768px) {
-    .top-page{
-        justify-content: center;
-    }
-    .redes-sociales{
-        display: none;
-    }
-    .logo{
-        display: none;
-    }
-    .imagen-fondo{
-        width: 100%;
-    }
-    .container-news-index{
-        display: grid;
-        grid-template-columns: 1fr
-               
-    }
-    .imagenes-photos-index{
-        display: grid;
-        grid-template-columns: 1fr;
-        padding: 50px;
-        column-gap: 10px;
-        row-gap: 15px;
-        justify-items: center;
-        
-    }
-    
-    .imagen-photos{
-        display: grid;
-        grid-template-columns: 1fr;
-        padding: 50px;
-        column-gap: 10px;
-        row-gap: 15px;
-        justify-items: center;
-    }
-    .imagen-biography{
-        width: 100%;
-    }
-    
+
+.top-page{
+    justify-content: center;
+}
+.redes-sociales{
+    display: none;
+}
+.logo{
+    display: none;
+}
+.imagen-fondo{
+    width: 100%;
+}
+.container-news-index{
+    display: grid;
+    grid-template-columns: 1fr   
+}
+.imagenes-photos-index{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 50px;
+    column-gap: 10px;
+    row-gap: 15px;
+    justify-items: center;
+}
+.imagen-photos{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 50px;
+    column-gap: 10px;
+    row-gap: 15px;
+    justify-items: center;
+}
+.imagen-biography{
+    width: 100%;
+}    
 }
